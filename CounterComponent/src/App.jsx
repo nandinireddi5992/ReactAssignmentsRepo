@@ -1,4 +1,4 @@
-import Counter from "C:\Users\Bobby\OneDrive\Desktop\ReactAssignmentsRepo\CounterComponent\src\components\Counter";
+import Counter from "./components/Counter";
 
 function App() {
   return (
