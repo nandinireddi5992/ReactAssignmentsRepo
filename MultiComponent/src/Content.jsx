@@ -1,6 +1,6 @@
 function Content() {
   return (
-    <div style={{ textAlign: "center", margin: "20px 0" }}>
+    <div class="bg-blue-800 text-center text-5xl ">
       This is Main Content
     </div>
   );

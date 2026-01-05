@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS Basics Assignment</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="flex flex-col md:flex-row justify-between items-center bg-gray-800 text-white p-4 gap-4">
+    <h1 class="text-xl font-bold">Tailwind Demo</h1>
+    <div class="flex flex-col md:flex-row gap-4">
+      <a href="#" class="hover:text-blue-400">Home</a>
+      <a href="#" class="hover:text-blue-400">Features</a>
+      <a href="#" class="hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="text-center py-10 px-4 space-y-6">
+    <h2 class="text-xl md:text-3xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+      Tailwind CSS Basics Exploration
+    </h2>
+
+    <div class="flex justify-center">
+      <div class="w-72 rounded shadow-lg overflow-hidden">
+        <img
+          src="https://via.placeholder.com/400"
+          class="transition transform hover:scale-105"
+          alt="Hero Image"
+        />
+      </div>
+    </div>
+
+    <!-- Button -->
+    <button class="px-6 py-2 rounded bg-gray-200 hover:bg-gray-300 active:bg-gray-400 transition">
+      Get Started
+    </button>
+  </section>
+
+  <!-- ================= LIST SECTION ================= -->
+  <section class="max-w-xl mx-auto py-8 px-4">
+    <h3 class="text-2xl font-bold mb-4">Why Tailwind?</h3>
+    <ul class="list-disc list-inside pl-5 space-y-2">
+      <li class="hover:text-blue-600">Utility-first CSS</li>
+      <li class="hover:text-blue-600">Responsive design</li>
+      <li class="hover:text-blue-600">Fast development</li>
+    </ul>
+  </section>
+
+  <!-- ================= FEATURES GRID ================= -->
+  <section class="py-10 px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Features</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-white rounded shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300" />
+        <div class="p-4">
+          <h4 class="font-bold text-xl mb-2">Feature One</h4>
+          <p class="text-gray-600 mb-4">Responsive utilities for all screens.</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300" />
+        <div class="p-4">
+          <h4 class="font-bold text-xl mb-2">Feature Two</h4>
+          <p class="text-gray-600 mb-4">Built-in hover and focus effects.</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/300" />
+        <div class="p-4">
+          <h4 class="font-bold text-xl mb-2">Feature Three</h4>
+          <p class="text-gray-600 mb-4">Easy grid and flex layouts.</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TABLE SECTION ================= -->
+  <section class="py-10 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-6 text-center">Team Table</h3>
+
+    <table class="w-full border border-gray-300">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="border p-2">Name</th>
+          <th class="border p-2">Role</th>
+          <th class="border p-2">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd:bg-gray-100 hover:bg-gray-200">
+          <td class="border p-2">John</td>
+          <td class="border p-2">Developer</td>
+          <td class="border p-2">Active</td>
+        </tr>
+        <tr class="odd:bg-gray-100 hover:bg-gray-200">
+          <td class="border p-2">Jane</td>
+          <td class="border p-2">Designer</td>
+          <td class="border p-2">Active</td>
+        </tr>
+        <tr class="odd:bg-gray-100 hover:bg-gray-200">
+          <td class="border p-2">Mark</td>
+          <td class="border p-2">Tester</td>
+          <td class="border p-2">Inactive</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= CONTACT FORM ================= -->
+  <section class="py-10 px-4 max-w-md mx-auto">
+    <h3 class="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+
+    <form class="space-y-4">
+      <input
+        type="text"
+        placeholder="Name"
+        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="text-center bg-gray-800 text-white p-4">
+    © 2026 Tailwind CSS Assignment
+  </footer>
+
+</body>
+</html>
